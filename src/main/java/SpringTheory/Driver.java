@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 public class Driver {
     private String name;
+
+    @Autowired
     private Car car;
 
     public Driver(String name) {
@@ -22,7 +24,6 @@ public class Driver {
         return car;
     }
 
-    @Autowired
     public void setCar(Car car) {
         this.car = car;
     }

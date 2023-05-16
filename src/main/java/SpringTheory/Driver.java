@@ -1,12 +1,13 @@
 package SpringTheory;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class Driver {
     private String name;
     private Car car;
 
-    public Driver(String name, Car car) {
+    public Driver(String name) {
         this.name = name;
-        this.car = car;
     }
 
     public String getName() {
@@ -21,6 +22,7 @@ public class Driver {
         return car;
     }
 
+    @Autowired
     public void setCar(Car car) {
         this.car = car;
     }

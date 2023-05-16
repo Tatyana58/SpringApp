@@ -11,11 +11,11 @@ public class Main {
         Driver driver = context.getBean("driver",Driver.class);
         System.out.println(driver.getCar());
 
-        driver.setCar(new Car("Audi"));
-        System.out.println(driver.getCar());
-
-        Driver driver1 = context.getBean("driver",Driver.class);
-        System.out.println(driver1.getCar());
+//        driver.setCar(new Car("Audi"));
+//        System.out.println(driver.getCar());
+//
+//        Driver driver1 = context.getBean("driver",Driver.class);
+//        System.out.println(driver1.getCar());
 
     }
 }

@@ -10,11 +10,11 @@ public class AppConfig {
 
     @Bean("car")
     public Car getCarBean() {
-        return new Car("Volvo");
+        return new Car("BMW");
     }
     @Bean("driver")
     public Driver getDriverBean() {
-        return new Driver("Iliya",getCarBean());
+        return new Driver("Iliya");
     }
 
 }

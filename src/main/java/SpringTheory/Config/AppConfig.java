@@ -15,11 +15,11 @@ public class AppConfig {
     public Car getCarBean() {
         return new Car("BMW");
     }
-//    @Bean("driver1")
-//    @Scope(scopeName = "prototype")
-//    public Driver getDriver1Bean() {
-//        return new Driver("Iliya");
-//    }
+    @Bean("driver1")
+    @Scope(scopeName = "prototype")
+    public Driver getDriver1Bean() {
+        return new Driver("Iliya");
+    }
 
     @Bean("driver2")
     @Scope(scopeName = "prototype")

@@ -1,5 +1,33 @@
 package SpringHome;
 
-public class Transport {
+public abstract class Transport {
+    private String model;
+    private String brand;
+
+    public void start() {
+    }
+
+    public Transport(String model, String brand) {
+        this.model = model;
+        this.brand = brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public void setBrand(String brand) {
+        this.brand = brand;
+    }
+
+
 
 }

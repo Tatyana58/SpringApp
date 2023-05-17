@@ -22,9 +22,9 @@ public class Main {
 //        System.out.println(driver1.getCar());
 
 
-        TaxiPark taxiPark = context.getBean(TaxiPark.class);
-        //System.out.println(taxiPark);
-        System.out.println(taxiPark.getDrivers());
+//        TaxiPark taxiPark = context.getBean(TaxiPark.class);
+//        //System.out.println(taxiPark);
+//        System.out.println(taxiPark.getDrivers());
 
 
 

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Main {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 //        Car car = context.getBean("car",Car.class);
 //        System.out.println(car);
 
@@ -25,6 +25,7 @@ public class Main {
         TaxiPark taxiPark = context.getBean(TaxiPark.class);
         //System.out.println(taxiPark);
         System.out.println(taxiPark.getDrivers());
+
 
 
     }

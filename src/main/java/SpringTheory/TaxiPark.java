@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 
@@ -16,6 +17,11 @@ public class TaxiPark {
 
     public List<Driver> getDrivers() {
         return drivers;
+    }
+
+    @PostConstruct
+    public void showDriverCount() {
+        System.out.printf("В парке %d водителя.",drivers.size());
     }
 
     public void setDrivers(List<Driver> drivers) {

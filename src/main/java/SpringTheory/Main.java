@@ -9,11 +9,11 @@ public class Main {
 //        Car car = context.getBean("car",Car.class);
 //        System.out.println(car);
 
-//        Driver driver1 = context.getBean("driver1",Driver.class);
-//        System.out.println(driver1);
-//
-//        Driver driver2 = context.getBean("driver2",Driver.class);
-//        System.out.println(driver2);
+        Driver driver1 = context.getBean("driver1",Driver.class);
+        System.out.println(driver1);
+
+        Driver driver2 = context.getBean("driver2",Driver.class);
+        System.out.println(driver2);
 
 //        driver.setCar(new Car("Audi"));
 //        System.out.println(driver.getCar());

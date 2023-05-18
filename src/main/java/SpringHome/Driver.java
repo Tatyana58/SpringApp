@@ -7,14 +7,14 @@ import org.springframework.context.annotation.Primary;
 public class Driver {
     private String name;
 
-    @Autowired
+
     private Transport transport;
 
     public void startCar() {
         System.out.println(name + " управляет  " + transport.getModel()+" , "+transport.getBrand());
         transport.start();
     }
-
+    @Autowired
     public Driver(String name, Transport transport) {
         this.name = name;
         this.transport = transport;

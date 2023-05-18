@@ -24,7 +24,6 @@ public class AppConfig {
     }
 
     @Bean("driver2")
-
     @Scope(scopeName = "prototype")
     public Driver getDriver2Bean() {
         return new Driver("Semen");
